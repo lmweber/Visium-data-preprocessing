@@ -1,5 +1,5 @@
 ---
-title: "Orchestrating Spatially-Resolved Transcriptomics Analysis with Bioconductor"
+title: "Visium Preprocessing"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 apple-touch-sin: "icon_192.png"
@@ -10,7 +10,7 @@ bibliography: "book.bib"
 biblio-style: "apalike"
 csl-entry-spacing: 1em
 link-citations: yes
-description: "Online book 'Orchestrating Spatially-Resolved Transcriptomics Analysis with Bioconductor'"
+description: "'Visium Preprocessing' online book"
 ---
 
 
