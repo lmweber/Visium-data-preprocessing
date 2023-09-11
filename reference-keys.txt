@@ -49,4 +49,6 @@ web-summary-.html-file
 import-outputs-into-r
 vistoseg-for-quantifying-cells-per-spot
 wrapping-up-2
+appendix
+contributors
 github-actions-workflow
