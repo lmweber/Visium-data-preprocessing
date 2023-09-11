@@ -9,16 +9,16 @@ Authors@R:
              role = c("aut", "cre"),
              email = "lukas.weber.edu@gmail.com",
              comment = c(ORCID = "0000-0002-3282-1730")),
-      person(given = "Leonardo",
-             family = "Collado-Torres",
-             role = c("aut"),
-             email = "lcolladotor@gmail.com",
-             comment = c(ORCID = "0000-0003-2140-308X")),
       person(given = "Stephanie C.",
              family = "Hicks",
              role = c("aut"),
              email = "shicks19@jhu.edu",
-             comment = c(ORCID = "0000-0002-7858-0231")))
+             comment = c(ORCID = "0000-0002-7858-0231"))),
+      person(given = "Leonardo",
+             family = "Collado-Torres",
+             role = c("aut"),
+             email = "lcolladotor@gmail.com",
+             comment = c(ORCID = "0000-0003-2140-308X"))
 License: CC BY-NC-ND 3.0 US
 URL: https://github.com/lmweber/Visium-data-preprocessing
 BugReports: https://github.com/lmweber/Visium-data-preprocessing/issues
@@ -33,8 +33,6 @@ Imports:
     bookdown,
     knitr,
     sessioninfo
-Suggests:
-    RefManageR
 VignetteBuilder: knitr
 biocViews: 
     Book,

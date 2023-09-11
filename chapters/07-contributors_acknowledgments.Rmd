@@ -3,8 +3,8 @@
 - [Lukas M. Weber](https://lmweber.org/), *Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, USA*
 - [Abby Spangler](https://twitter.com/abspangler), *Lieber Institute for Brain Development, Baltimore, MD, USA*
 - [Madhavi Tippani](https://twitter.com/MadhaviTippani), *Lieber Institute for Brain Development, Baltimore, MD, USA*
-- [Leonardo Collado-Torres](https://lcolladotor.github.io/), *Lieber Institute for Brain Development, Baltimore, MD, USA*
 - [Stephanie C. Hicks](https://www.stephaniehicks.com/), *Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, USA*
+- [Leonardo Collado-Torres](https://lcolladotor.github.io/), *Lieber Institute for Brain Development, Baltimore, MD, USA*
 
 
 ## GitHub Actions workflow
