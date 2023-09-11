@@ -27,34 +27,16 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
-    SpatialExperiment
 Imports: 
     BiocFileCache,
     BiocStyle,
     bookdown,
-    DelayedMatrixStats,
-    devtools,
-    ExperimentHub,
-    ggspavis,
-    igraph,
     knitr,
-    lobstr,
-    pheatmap,
-    rmarkdown,
-    rtracklayer,
-    scater,
-    scran,
-    sessioninfo,
-    SingleCellExperiment,
-    spatialLIBD,
-    STexampleData,
-    uwot, 
-    nnSVG
+    sessioninfo
 Suggests:
     RefManageR
 VignetteBuilder: knitr
 biocViews: 
     Book,
     Transcriptomics,
-    SingleCell,
     Spatial
