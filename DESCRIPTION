@@ -1,4 +1,4 @@
-Package: Visium-data-preprocessing
+Package: VisiumDataPreprocessing
 Title: Visium Data Preprocessing
 Description: This package contains source materials to build the Visium Data 
     Preprocessing online book.
