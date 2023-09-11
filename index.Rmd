@@ -3,10 +3,7 @@ title: "Visium Data Preprocessing"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: "book"
-bibliography: "book.bib"
-biblio-style: "apalike"
 csl-entry-spacing: 1em
-link-citations: yes
 description: "Online book 'Visium Data Preprocessing'"
 ---
 
