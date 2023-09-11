@@ -13,13 +13,9 @@ description: "'Visium Preprocessing' online book"
 
 # Welcome {-}
 
-<a href="https://bioconductor.org"><img src="https://raw.githubusercontent.com/Bioconductor/BiocStickers/devel/Bioconductor/Bioconductor-rh.png" width="150" alt="Bioconductor Sticker" align="right" style="margin: 0 1em 0 1em" /></a>
+This is the website for the **'Visium Preprocessing'** online book.
 
-This is the website for the online book **"Orchestrating Spatially-Resolved Transcriptomics Analysis with Bioconductor" (OSTA)**.
+This book provides detailed instructions on several preprocessing procedures for computational analyses of spatial transcriptomics data from the 10x Genomics Visium platform.
 
-This book provides several examples of computational analysis workflows for **spatially resolved-transcriptomics (SRT)** data, using the [Bioconductor](http://bioconductor.org/) framework within the R programming language. The chapters contain details on individual analysis steps as well as complete workflows, with example datasets and R code that can be run on your own laptop.
-
-The book is organized into several parts, including background, preprocessing steps, analysis steps, and complete workflows.
-
-Additional introductory material on R and Bioconductor can also be found in the related book [Orchestrating Single-Cell Analysis with Bioconductor (OSCA)](https://osca.bioconductor.org/).
+The book is organized into chapters for each preprocessing step.
 
