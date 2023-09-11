@@ -7,7 +7,7 @@ bibliography: "book.bib"
 biblio-style: "apalike"
 csl-entry-spacing: 1em
 link-citations: yes
-description: "'Visium Data Preprocessing' online book"
+description: "Online book 'Visium Data Preprocessing'"
 ---
 
 
