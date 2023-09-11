@@ -7,7 +7,7 @@ Repository containing source files for 'Visium Data Preprocessing' online book.
 
 ## Website
 
-The website for the compiled version of the book is at: 
+The website for the compiled version of the book is at: https://lmweber.org/Visium-data-preprocessing/
 
 
 ## Source files
