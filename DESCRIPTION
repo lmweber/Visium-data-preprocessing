@@ -1,6 +1,6 @@
-Package: Visium-preprocessing
-Title: Visium Preprocessing
-Description: This package contains source materials to build the Visium 
+Package: Visium-data-preprocessing
+Title: Visium Data Preprocessing
+Description: This package contains source materials to build the Visium Data 
     Preprocessing online book.
 Version: 0.99.0
 Authors@R: 
@@ -20,8 +20,8 @@ Authors@R:
              email = "shicks19@jhu.edu",
              comment = c(ORCID = "0000-0002-7858-0231")))
 License: CC BY-NC-ND 3.0 US
-URL: https://github.com/lmweber/Visium-preprocessing
-BugReports: https://github.com/lmweber/Visium-preprocessing/issues
+URL: https://github.com/lmweber/Visium-data-preprocessing
+BugReports: https://github.com/lmweber/Visium-data-preprocessing/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

@@ -1,8 +1,8 @@
-# (PART) Visium preprocessing {-}
+# (PART) Visium data preprocessing {-}
 
-# Visium preprocessing
+# Visium data preprocessing
 
-In this part, we describe several detailed preprocessing steps for 10x Genomics Visium data, which are required to prepare raw data files to load the data into R. These steps use tools outside R and Bioconductor.
+In this part, we describe several detailed data preprocessing steps for 10x Genomics Visium data, which are required to prepare raw data files to load the data into R.
 
 In the examples shown here, we use the [Space Ranger](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/what-is-space-ranger) and [Loupe Browser](https://www.10xgenomics.com/products/loupe-browser) software provided by 10x Genomics to preprocess Visium data. Alternative preprocessing workflows have also been developed by others, including the [alevin-fry](https://combine-lab.github.io/alevin-fry-tutorials/2021/af-spatial/) pipeline for Visium and other platforms.
 

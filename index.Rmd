@@ -1,5 +1,5 @@
 ---
-title: "Visium Preprocessing"
+title: "Visium Data Preprocessing"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: "book"
@@ -7,15 +7,15 @@ bibliography: "book.bib"
 biblio-style: "apalike"
 csl-entry-spacing: 1em
 link-citations: yes
-description: "'Visium Preprocessing' online book"
+description: "'Visium Data Preprocessing' online book"
 ---
 
 
 # Welcome {-}
 
-This is the website for the **'Visium Preprocessing'** online book.
+This is the website for the **'Visium Data Preprocessing'** online book.
 
-This book provides detailed instructions on several preprocessing procedures for computational analyses of spatial transcriptomics data from the 10x Genomics Visium platform.
+This book provides detailed instructions on several data preprocessing procedures for computational analyses of spatial transcriptomics data from the 10x Genomics Visium platform.
 
-The book is organized into chapters for each preprocessing step.
+The book is organized into chapters for each data preprocessing step.
 

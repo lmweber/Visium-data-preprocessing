@@ -1,8 +1,8 @@
-# Visium Preprocessing
+# Visium Data Preprocessing
 
-[![R build status](https://github.com/lmweber/Visium-preprocessing/workflows/R-CMD-bioc/badge.svg)](https://github.com/lmweber/Visium-preprocessing/actions)
+[![R build status](https://github.com/lmweber/Visium-data-preprocessing/workflows/R-CMD-bioc/badge.svg)](https://github.com/lmweber/Visium-data-preprocessing/actions)
 
-Repository containing source files for 'Visium Preprocessing' online book.
+Repository containing source files for 'Visium Data Preprocessing' online book.
 
 
 ## Website
