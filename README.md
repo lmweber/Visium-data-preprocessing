@@ -1,13 +1,13 @@
-# Orchestrating Spatially Resolved Transcriptomics Analysis with Bioconductor
+# Visium Preprocessing
 
-[![R build status](https://github.com/lmweber/OSTA-book/workflows/R-CMD-bioc/badge.svg)](https://github.com/lmweber/OSTA-book/actions)
+[![R build status](https://github.com/lmweber/Visium-preprocessing/workflows/R-CMD-bioc/badge.svg)](https://github.com/lmweber/Visium-preprocessing/actions)
 
-Repository containing source files for OSTA online book.
+Repository containing source files for 'Visium Preprocessing' online book.
 
 
 ## Website
 
-The website for the compiled version of the book is at: https://lmweber.org/OSTA-book/
+The website for the compiled version of the book is at: 
 
 
 ## Source files
