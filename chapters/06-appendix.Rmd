@@ -1,4 +1,7 @@
-# Contributors and acknowledgments
+# (PART) Appendix {-}
+
+
+## Contributors
 
 - [Lukas M. Weber](https://lmweber.org/), *Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, USA*
 - [Abby Spangler](https://twitter.com/abspangler), *Lieber Institute for Brain Development, Baltimore, MD, USA*
