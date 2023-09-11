@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Introduction | Visium Data Preprocessing</title>
+  <meta name="description" content="Online book ‘Visium Data Preprocessing’" />
+  <meta name="generator" content="bookdown 0.35 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Introduction | Visium Data Preprocessing" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Online book ‘Visium Data Preprocessing’" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Introduction | Visium Data Preprocessing" />
+  
+  <meta name="twitter:description" content="Online book ‘Visium Data Preprocessing’" />
+  
+
+
+
+<meta name="date" content="2023-09-11" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="visium-data-preprocessing.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">VisiumDataPreprocessing</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#spatially-resolved-transcriptomics"><i class="fa fa-check"></i><b>1.1</b> Spatially-resolved transcriptomics</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#x-genomics-visium"><i class="fa fa-check"></i><b>1.2</b> 10x Genomics Visium</a></li>
+</ul></li>
+<li class="part"><span><b>II Visium data preprocessing</b></span></li>
+<li class="chapter" data-level="2" data-path="visium-data-preprocessing.html"><a href="visium-data-preprocessing.html"><i class="fa fa-check"></i><b>2</b> Visium data preprocessing</a></li>
+<li class="chapter" data-level="3" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html"><i class="fa fa-check"></i><b>3</b> Image segmentation (Visium)</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#what-is-vistoseg"><i class="fa fa-check"></i><b>3.2</b> What is VistoSeg?</a></li>
+<li class="chapter" data-level="3.3" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#split-histology-images"><i class="fa fa-check"></i><b>3.3</b> Split histology images</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#file-size-issues"><i class="fa fa-check"></i><b>3.3.1</b> File size issues</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#segment-cell-nuclei"><i class="fa fa-check"></i><b>3.4</b> Segment cell nuclei</a></li>
+<li class="chapter" data-level="3.5" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#identify-number-of-cells-per-spot"><i class="fa fa-check"></i><b>3.5</b> Identify number of cells per spot</a></li>
+<li class="chapter" data-level="3.6" data-path="image-segmentation-visium.html"><a href="image-segmentation-visium.html#wrapping-up"><i class="fa fa-check"></i><b>3.6</b> Wrapping up</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html"><i class="fa fa-check"></i><b>4</b> Loupe Browser (Visium)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html#overview-1"><i class="fa fa-check"></i><b>4.1</b> Overview</a></li>
+<li class="chapter" data-level="4.2" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html#manual-alignment-of-images"><i class="fa fa-check"></i><b>4.2</b> Manual alignment of images</a></li>
+<li class="chapter" data-level="4.3" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html#output-files-and-space-ranger"><i class="fa fa-check"></i><b>4.3</b> Output files and Space Ranger</a></li>
+<li class="chapter" data-level="4.4" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html#downstream-analyses-in-loupe-browser"><i class="fa fa-check"></i><b>4.4</b> Downstream analyses in Loupe Browser</a></li>
+<li class="chapter" data-level="4.5" data-path="loupe-browser-visium.html"><a href="loupe-browser-visium.html#wrapping-up-1"><i class="fa fa-check"></i><b>4.5</b> Wrapping up</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html"><i class="fa fa-check"></i><b>5</b> Space Ranger (Visium)</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#overview-2"><i class="fa fa-check"></i><b>5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.2" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#what-is-space-ranger"><i class="fa fa-check"></i><b>5.2</b> What is Space Ranger?</a></li>
+<li class="chapter" data-level="5.3" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#installing-space-ranger"><i class="fa fa-check"></i><b>5.3</b> Installing Space Ranger</a></li>
+<li class="chapter" data-level="5.4" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#run-spaceranger-count"><i class="fa fa-check"></i><b>5.4</b> Run spaceranger count</a></li>
+<li class="chapter" data-level="5.5" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#output-files"><i class="fa fa-check"></i><b>5.5</b> Output files</a></li>
+<li class="chapter" data-level="5.6" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#web-summary-.html-file"><i class="fa fa-check"></i><b>5.6</b> Web summary .html file</a></li>
+<li class="chapter" data-level="5.7" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#import-outputs-into-r"><i class="fa fa-check"></i><b>5.7</b> Import outputs into R</a></li>
+<li class="chapter" data-level="5.8" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#vistoseg-for-quantifying-cells-per-spot"><i class="fa fa-check"></i><b>5.8</b> VistoSeg for quantifying cells per spot</a></li>
+<li class="chapter" data-level="5.9" data-path="space-ranger-visium.html"><a href="space-ranger-visium.html#wrapping-up-2"><i class="fa fa-check"></i><b>5.9</b> Wrapping up</a></li>
+</ul></li>
+<li class="part"><span><b>III Appendix</b></span></li>
+<li class="chapter" data-level="6" data-path="related-resources.html"><a href="related-resources.html"><i class="fa fa-check"></i><b>6</b> Related resources</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="related-resources.html"><a href="related-resources.html#resources-for-other-spatially-resolved-platforms"><i class="fa fa-check"></i><b>6.1</b> Resources for other spatially-resolved platforms</a></li>
+<li class="chapter" data-level="6.2" data-path="related-resources.html"><a href="related-resources.html#data-structures"><i class="fa fa-check"></i><b>6.2</b> Data structures</a></li>
+<li class="chapter" data-level="6.3" data-path="related-resources.html"><a href="related-resources.html#statistical-concepts"><i class="fa fa-check"></i><b>6.3</b> Statistical concepts</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="contributors-and-acknowledgments.html"><a href="contributors-and-acknowledgments.html"><i class="fa fa-check"></i><b>7</b> Contributors and acknowledgments</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="contributors-and-acknowledgments.html"><a href="contributors-and-acknowledgments.html#osta"><i class="fa fa-check"></i><b>7.1</b> OSTA</a></li>
+<li class="chapter" data-level="7.2" data-path="contributors-and-acknowledgments.html"><a href="contributors-and-acknowledgments.html#spatialexperiment"><i class="fa fa-check"></i><b>7.2</b> SpatialExperiment</a></li>
+<li class="chapter" data-level="7.3" data-path="contributors-and-acknowledgments.html"><a href="contributors-and-acknowledgments.html#github-actions-workflow"><i class="fa fa-check"></i><b>7.3</b> GitHub Actions workflow</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>8</b> References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Visium Data Preprocessing</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This book provides details on several key data preprocessing procedures for computational analyses of spatially-resolved transcriptomics data from the 10x Genomics Visium platform.</p>
+<div id="spatially-resolved-transcriptomics" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Spatially-resolved transcriptomics<a href="introduction.html#spatially-resolved-transcriptomics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Spatially-resolved transcriptomics (SRT) refers to high-throughput genomic technologies that enable the measurement of large sets of genes at a large number of spatial locations (e.g. up to thousands of genes at thousands of measurement locations), usually on two-dimensional tissue sections. A number of technological platforms have been developed, each with their unique advantages. SRT was named the <a href="https://doi.org/10.1038/s41592-020-01042-x">Method of the Year 2020</a> by Nature Methods, and has found widespread application in numerous biological systems.</p>
+<p>A number of different technological platforms are now available. These can be grouped into sequencing-based platforms and molecule-based (or imaging-based) platforms. For recent reviews of available platforms, computational analysis methods, and outstanding challenges, see <a href="https://www.science.org/doi/10.1126/science.abq4964">Bressan et al. 2023</a> or <a href="https://www.nature.com/articles/s41592-022-01409-2">Moses et al. 2022</a>.</p>
+<p>In this book, we focus on the 10x Genomics Visium platform, which is an example of a sequencing-based platform and is currently the most widely-used platform.</p>
+<p>Each platform brings specific challenges regarding computational analyses, including data preprocessing procedures as well as downstream analyses. In this book, we provide detailed instructions on data preprocessing procedures for data from the 10x Genomics Visium platform.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
+<img src="images/Maynard2020_spatial.png" alt="Illustration of potential uses of spatially-resolved transcriptomics data and how it can be combined with single cell/nucleus RNA-seq to study tissues of interest such as the human brain. Source: [Maynard et al, _Neuropsychopharmacol._, 2020](https://doi.org/10.1038/s41386-019-0484-7)." width="100%" />
+<p class="caption">
+Figure 1.1: Illustration of potential uses of spatially-resolved transcriptomics data and how it can be combined with single cell/nucleus RNA-seq to study tissues of interest such as the human brain. Source: <a href="https://doi.org/10.1038/s41386-019-0484-7">Maynard et al, <em>Neuropsychopharmacol.</em>, 2020</a>.
+</p>
+</div>
+</div>
+<div id="x-genomics-visium" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> 10x Genomics Visium<a href="introduction.html#x-genomics-visium" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="https://www.10xgenomics.com/products/spatial-gene-expression">10x Genomics Visium</a> platform measures transcriptome-wide gene expression at a grid of spatial locations (referred to as spots) on a tissue capture area. Either fresh-frozen or formalin-fixed paraffin-embedded (FFPE) tissue may be used. Each spot contains millions of spatially-barcoded capture oligonucleotides, which bind to mRNAs from the tissue. A cDNA library is then generated for sequencing, which includes the spatial barcodes, allowing reads to be mapped back to their spatial locations.</p>
+<p>The array dimensions are 6.5mm x 6.5mm, with around 5000 barcoded spots. Spots are 55µm in diameter and spaced 100µm center-to-center in a hexagonal grid arrangement. The number of cells per spot depends on the tissue cell density, e.g. around 0-10 for human brain or ~50 for mouse brain. Each Visium slide contains four tissue capture areas. The following figure provides an illustration.</p>
+<p>Histology images generated from hematoxylin and eosin (H&amp;E) staining can be used to identify anatomical and cell morphological features such as the number of cells per spot.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Visium-schematic"></span>
+<img src="images/Visium.png" alt="Schematic of 10x Genomics Visium platform. Source: [10x Genomics Visium website](https://www.10xgenomics.com/spatial-transcriptomics/)"  />
+<p class="caption">
+Figure 1.2: Schematic of 10x Genomics Visium platform. Source: <a href="https://www.10xgenomics.com/spatial-transcriptomics/">10x Genomics Visium website</a>
+</p>
+</div>
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="visium-data-preprocessing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"lib_dir": "book_assets"
+});
+});
+</script>
+
+</body>
+
+</html>
