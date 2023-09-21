@@ -12,7 +12,9 @@ description: "Online book 'Visium Data Preprocessing'"
 
 This is the website for the **'Visium Data Preprocessing'** online book.
 
-This book provides detailed instructions on several data preprocessing procedures for computational analyses of spatial transcriptomics data from the 10x Genomics Visium platform.
+This book provides details on several data preprocessing procedures for computational analyses of spatial transcriptomics data from the 10x Genomics Visium platform.
 
 The book is organized into chapters for each data preprocessing step.
+
+For details on downstream analysis methods, see the related book [Best Practices for Spatial Transcriptomics Analysis with Bioconductor](https://lmweber.org/BestPracticesST/).
 
